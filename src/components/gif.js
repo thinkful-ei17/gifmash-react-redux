@@ -1,9 +1,8 @@
 import React from 'react';
+import './gif.css';
 
-export default function Gif() {
+export default function Gif(props) {
     return (
-        <p>
-            Hello World!
-        </p>
+        <img src={props.img} alt={props.alt}/>
     )
 }

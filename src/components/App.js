@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
-import GifContainer from './gif-container'
+import React from 'react';
+import GifContainer from './gif-container';
+import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <GifContainer />
-      </div>
-    );
-  }
+export default function App() {
+  return (
+    <div className="App">
+      <h1>GIF-MASH</h1>
+      <GifContainer />
+    </div>
+  )
 }
-
-export default App;
