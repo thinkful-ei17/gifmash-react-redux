@@ -1,9 +1,9 @@
 import { PICK_WINNER } from "./actions";
 
 const generateTwoDifferentRandomNumbers = function() {
-    const randomA = Math.floor(Math.random() * 6);
+    const randomA = Math.floor(Math.random() * 15);
     do {
-        var randomB = Math.floor(Math.random() * 6);
+        var randomB = Math.floor(Math.random() * 15);
     } while (randomB === randomA);
     return [ randomA, randomB ];
 }
@@ -47,7 +47,68 @@ const createInitialState = function(){
         img: 'https://media.giphy.com/media/5MTo5bU7yu68E/giphy.gif',
         alt: 'Boxer in Booties',
         wins: 0
-      }],
+      },
+      {
+        key: 6,
+        img: 'https://media.giphy.com/media/5HRvXqKEVrZEA/giphy.gif',
+        alt: 'Booger Gorilla',
+        wins: 0
+      },
+      {
+        key: 7,
+        img: 'https://media.giphy.com/media/dcubXtnbck0RG/giphy.gif',
+        alt: 'Oprah Gives Everyone Bees',
+        wins: 0
+      },
+      {
+        key: 8,
+        img: 'https://media.giphy.com/media/101zSb0Dslq0hy/giphy.gif',
+        alt: 'Garbage Truck Fail',
+        wins: 0
+      },
+      {
+        key: 9,
+        img: 'https://media.giphy.com/media/wngaqQaMycRos/giphy.gif',
+        alt: 'Baby Elephant Tumble',
+        wins: 0
+      },
+      {
+        key: 10,
+        img: 'https://media.giphy.com/media/3oKIPD1jLL91YMqJsk/giphy.gif',
+        alt: 'Birthday Dog',
+        wins: 0
+      },
+      {
+        key: 11,
+        img: 'https://media.giphy.com/media/pkuvzjm5WPaH6/giphy.gif',
+        alt: 'Birthday Candle Thief',
+        wins: 0
+      },
+      {
+        key: 12,
+        img: 'https://media.giphy.com/media/EQZnVtaNxwLyo/giphy.gif',
+        alt: 'Stop Sign Storm',
+        wins: 0
+      },
+      {
+        key: 13,
+        img: 'https://media.giphy.com/media/LlMGUeRo7zBQY/giphy.gif',
+        alt: 'Man Riding Pig',
+        wins: 0
+      },
+      {
+        key: 14,
+        img: 'https://media.giphy.com/media/47VD8nGZhmcNO/giphy.gif',
+        alt: 'Otter Cup Stacking',
+        wins: 0
+      },
+      {
+        key: 15,
+        img: 'https://media.giphy.com/media/DGfhSy8xKKbHq/giphy.gif',
+        alt: 'Yoga Dog',
+        wins: 0
+      }
+    ],
       imageA: randomA,
       imageB: randomB
     }

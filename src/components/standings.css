@@ -1,3 +1,8 @@
-/* .record {
-    display: inline-block;
-} */
+h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.standings {
+    margin-left: 100px;
+}

@@ -6,13 +6,13 @@ import './standings.css';
 export function Standings(props) {
     
     return (
-        <div>
+        <div className="standings">
             <h3>TOP FIVE:</h3>
-            <div className="record">1. <Record id={props.id1} /></div>
-            <div className="record">2. <Record id={props.id2} /></div>
-            <div className="record">3. <Record id={props.id3} /></div>
-            <div className="record">4. <Record id={props.id4} /></div>
-            <div className="record">5. <Record id={props.id5} /></div>
+            <Record rank={1} id={props.id1} />
+            <Record rank={2} id={props.id2} />
+            <Record rank={3} id={props.id3} />
+            <Record rank={4} id={props.id4} />
+            <Record rank={5} id={props.id5} />
         </div>
     )
 };

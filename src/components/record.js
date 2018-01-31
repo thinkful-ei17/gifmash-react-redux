@@ -5,6 +5,7 @@ import './record.css'
 export function Record(props) {
     return (
         <div className="record">
+          {props.rank}. 
           <img className="thumbnail" src={props.img} alt={props.alt} />
           : {props.wins} WINS
         </div>
@@ -15,6 +16,7 @@ const mapStateToProps = (state, props) => {
     for (let i=0; i<state.images.length; i++) {
         if (state.images[i].key === props.id) {
             return {
+                rank: props.rank,
                 alt: state.images[i].alt,
                 img: state.images[i].img,
                 wins: state.images[i].wins
